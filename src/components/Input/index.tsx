@@ -6,7 +6,7 @@ interface IInputProps {
 
 const Input = ({ label }: IInputProps) => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 w-full">
       <label htmlFor={label.toLowerCase()} className="font-semibold">
         {label}
       </label>
