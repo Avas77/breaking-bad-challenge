@@ -1,8 +1,10 @@
+import HeroText from "./components/HeroTextGroup/HeroTextGroup";
+
 function App() {
   return (
-    <>
-      <h1>Hello Wolrd</h1>
-    </>
+    <main className="w-screen h-screen flex justify-center items-center">
+      <HeroText firstName="Breaking" lastName="Bad" />
+    </main>
   );
 }
 
