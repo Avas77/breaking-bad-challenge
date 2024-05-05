@@ -8,7 +8,9 @@ interface IHeroTextProps {
 const HeroText = ({ highlighted, rest }: IHeroTextProps) => {
   return (
     <h1 className="text-8xl flex items-center justify-center font-bold">
-      <mark className="p-2 bg-primary text-white">{highlighted}</mark>
+      {highlighted && (
+        <mark className="p-2 bg-primary text-white">{highlighted}</mark>
+      )}
       {rest}
     </h1>
   );
